@@ -38,7 +38,8 @@ public class Lottery {
         System.out.println("Player sort: " + Arrays.toString(player) + "\n");
         System.out.println("Matched numbers: " + results(ticket, player));
     }
-    public static int results(int[] ticket, int [] player) {
+
+    public static int results(int[] ticket, int[] player) {
         int count = 0;
         for (int i = 0; i < ticket.length; i++) {
             if (ticket[i] == player[i]) {
