@@ -8,9 +8,14 @@ public class Rugby {
         int players = 25;
         int[] firstTeam = generateAge(players);
         int[] secondTeam = generateAge(players);
-//      int
+
+        double firstTeamAverageAge = averageAge(firstTeam);
+        double secondTeamAverageAge = averageAge(secondTeam);
+
         System.out.println("\n" + "Age of first team players:" + "\n" + Arrays.toString(firstTeam));
         System.out.println("\n" + "Age of second team players:" + "\n" + Arrays.toString(secondTeam));
+        System.out.println("\n" + "Average age of first team players is " + firstTeamAverageAge + " years.");
+        System.out.println("\n" + "Average age of second team players is " + secondTeamAverageAge + " years.");
     }
 
     public static int[] generateAge(int players) {
@@ -21,14 +26,21 @@ public class Rugby {
         }
         return age;
     }
+
+    public static double averageAge(int[] age) {
+        int ageSum = 0;
+//        double teamAverageAge = (double) ageSum / age.length;
+        for (int i : age) {
+            ageSum += i;
+        }
+        return ageSum / (double) age.length;
+    }
 }
-
-
 
 //        int[] secondTeam = new int[25];
 //        int minAgeSecondTeam = 18;
 //        int maxAgeSecondTeam = 40;
-////        System.out.println("Age of second team players (years):");
+//        System.out.println("Age of second team players (years):");
 //        for (int j = 0; j < secondTeam.length; j++) {
 //            int randomSecondTeamAge = ThreadLocalRandom.current().nextInt(minAgeSecondTeam, maxAgeSecondTeam + 1);
 //            secondTeam[j] = randomSecondTeamAge;
@@ -41,7 +53,7 @@ public class Rugby {
 //            sumFirstTeam += i;      //sumFirstTeam += secondTeam[i]
 //        }
 //        double averageFirstTeam = (double) sumFirstTeam / firstTeam.length;
-////        System.out.println("Average age of first team players is : " + averageFirstTeam + " years.");
+//        System.out.println("Average age of first team players is : " + averageFirstTeam + " years.");
 //
 //        int sumSecondTeam = 0;
 //        for (int j : secondTeam) {   //(int j = 0; j < secondTeam.length; j++)
@@ -76,8 +88,8 @@ public class Rugby {
 //        System.out.println("\n");
 //
 //        int sumFirstTeam = 0;
-//        for (int i : firstTeam) {   //(int i = 0; i < secondTeam.length; i++)
-//            sumFirstTeam += i;      //sumFirstTeam += secondTeam[i]
+//        for (int i : firstTeam) {   //(int i = 0; i < firstTeam.length; i++)
+//            sumFirstTeam += i;      //sumFirstTeam += firstTeam[i]
 //        }
 //        double averageFirstTeam = (double) sumFirstTeam / firstTeam.length;
 //        System.out.println("Average age of first team players is : " + averageFirstTeam + " years.");
