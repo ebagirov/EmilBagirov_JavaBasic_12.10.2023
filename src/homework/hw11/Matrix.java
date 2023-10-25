@@ -13,30 +13,21 @@ public class Matrix {
         int column = scanner.nextInt();
         System.out.println();
 
-        System.out.println("Original matrix:");
+        System.out.println("Original matrix:" + "\n");
         int[][] matrix = createMatrix(row, column);
         printMatrix(matrix);
         System.out.println();
 
-        System.out.println("Transposed matrix:");
+        System.out.println("Transposed matrix:" + "\n");
         int[][] transposedMatrix = transposeMatrix(matrix);
         printMatrix(transposedMatrix);
-        System.out.println();
-    }
-
-    public static void printMatrix(int[][] matrix) {
-        for (int[] row : matrix) {
-            for (int position : row) {
-                System.out.print(position + "  ");
-            }
-        }
     }
 
     public static int[][] createMatrix(int row, int column) {
         int[][] matrix = new int[row][column];
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
-                matrix[i][j] = ThreadLocalRandom.current().nextInt(30);
+                matrix[i][j] = ThreadLocalRandom.current().nextInt(10);
             }
         }
         return matrix;
@@ -50,5 +41,14 @@ public class Matrix {
             }
         }
         return transposedMatrix;
+    }
+
+    public static void printMatrix(int[][] matrix) {
+        for (int[] row : matrix) {
+            for (int position : row) {
+                System.out.print(position + " ");
+            }
+            System.out.println();
+        }
     }
 }
