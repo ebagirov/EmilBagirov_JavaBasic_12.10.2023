@@ -14,6 +14,6 @@ public class Person {
     }
 
     public String personInfo() {
-        return "To call citizen " + name + " " + surname + " from " + city + " dial " + phone;
+        return "To call citizen__ " + name + " " + surname + " from " + city + " dial " + phone;
     }
 }
