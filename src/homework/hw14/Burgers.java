@@ -40,15 +40,16 @@ public class Burgers {
     }
 
     public void printIngredients() {
-        System.out.println(bun);
-        System.out.println(meat);
-        System.out.println(greens);
-        System.out.println(cheese);
+        System.out.println("\n" + "\t" + name + ":");
+        System.out.println("Bun - " + bun);
+        System.out.println("Meat - " + meat);
+        System.out.println("Greens - " + greens);
+        System.out.println("Cheese - " + cheese);
         if (mayonnaise != null) {
-            System.out.println(mayonnaise);
+            System.out.println("Mayonnaise - " + mayonnaise);
         }
         if (extraMeat != null) {
-            System.out.println(extraMeat);
+            System.out.println("Extra meet - " + extraMeat);
         }
     }
 }
