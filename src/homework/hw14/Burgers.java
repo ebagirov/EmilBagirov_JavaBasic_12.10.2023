@@ -1,5 +1,7 @@
 package homework.hw14;
 
+import static homework.hw14.BurgerMain.printIngredients;
+
 public class Burgers {
     private String name;
     private String bun;
@@ -37,19 +39,5 @@ public class Burgers {
         this.mayonnaise = mayonnaise;
         this.extraMeat = extraMeat;
         printIngredients();
-    }
-
-    public void printIngredients() {
-        System.out.println("\n" + "\t" + name + ":");
-        System.out.println("Bun - " + bun);
-        System.out.println("Meat - " + meat);
-        System.out.println("Greens - " + greens);
-        System.out.println("Cheese - " + cheese);
-        if (mayonnaise != null) {
-            System.out.println("Mayonnaise - " + mayonnaise);
-        }
-        if (extraMeat != null) {
-            System.out.println("Extra meet - " + extraMeat);
-        }
     }
 }
