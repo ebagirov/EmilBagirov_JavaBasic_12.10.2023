@@ -31,43 +31,56 @@ public class FitnessTracker {
     public String getName() {
         return name;
     }
-    public int  getBirthDay() {
+
+    public int getBirthDay() {
         return birthDay;
     }
-    public int  getBirthMonth() {
+
+    public int getBirthMonth() {
         return birthMonth;
     }
-    public int  getBirthYear() {
+
+    public int getBirthYear() {
         return birthYear;
     }
-    public String  getEmail() {
+
+    public String getEmail() {
         return email;
     }
-    public String  getPhone() {
+
+    public String getPhone() {
         return phone;
     }
-    public String  getSurname() {
+
+    public String getSurname() {
         return surname;
     }
-    public double  getWeight() {
+
+    public double getWeight() {
         return weight;
     }
+
     public void setWeight(double weight) {
         this.weight = weight;
     }
-    public String  getPressure() {
+
+    public String getPressure() {
         return pressure;
     }
+
     public void setPressure(String pressure) {
         this.pressure = pressure;
     }
-    public int  getSteps() {
+
+    public int getSteps() {
         return steps;
     }
+
     public void setSteps(int steps) {
         this.steps = steps;
     }
-    public int  getAge() {
+
+    public int getAge() {
         return age;
     }
 

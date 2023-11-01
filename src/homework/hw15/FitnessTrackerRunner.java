@@ -12,14 +12,15 @@ class FitnessTrackerRunner {
         second.printAccountInfo();
         third.printAccountInfo();
 
-        System.out.println("\n\t" + " Updated account info " + "\t");
-        first.printAccountInfo();
         second.setWeight(115.3);
         second.setPressure("110/90");
         second.setSteps(12000);
-        second.printAccountInfo();
         third.setPressure("130/100");
         third.setSteps(15000);
+
+        System.out.println("\n\t" + " Updated account info " + "\t");
+        first.printAccountInfo();
+        second.printAccountInfo();
         third.printAccountInfo();
     }
 }
