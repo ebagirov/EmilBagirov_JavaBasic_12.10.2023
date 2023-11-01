@@ -28,25 +28,25 @@ public class FitnessTracker {
         this.age = currentYear - birthYear;
     }
 
-    private String getName() {
+    public String getName() {
         return name;
     }
-    private int  getBirthDay() {
+    public int  getBirthDay() {
         return birthDay;
     }
-    private int  getBirthMonth() {
+    public int  getBirthMonth() {
         return birthMonth;
     }
-    private int  getBirthYear() {
+    public int  getBirthYear() {
         return birthYear;
     }
-    private String  getEmail() {
+    public String  getEmail() {
         return email;
     }
-    private String  getPhone() {
+    public String  getPhone() {
         return phone;
     }
-    private String  getSurname() {
+    public String  getSurname() {
         return surname;
     }
     public double  getWeight() {
