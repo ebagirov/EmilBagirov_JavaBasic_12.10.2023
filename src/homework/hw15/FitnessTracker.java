@@ -49,21 +49,29 @@ public class FitnessTracker {
     private String  getSurname() {
         return surname;
     }
-    private double  getWeight() {
+    public double  getWeight() {
         return weight;
     }
-    private String  getPressure() {
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+    public String  getPressure() {
         return pressure;
     }
-    private int  getSteps() {
+    public void setPressure(String pressure) {
+        this.pressure = pressure;
+    }
+    public int  getSteps() {
         return steps;
     }
-    private int  getAge() {
+    public void setSteps(int steps) {
+        this.steps = steps;
+    }
+    public int  getAge() {
         return age;
     }
 
-
     public void printAccountInfo() {
-        System.out.println("Fitness tracker data - " + "\n" + "[name: " + name + "; surname: " + surname + "; birthDay: " + birthDay + "; birthMonth: " + birthMonth + "; birthYear: " + birthYear + "; age: " + age + "; email: " + email + "; phone: " + phone + "; weight: " + weight + "; pressure: " + pressure + "; steps: " + steps + "]");
+        System.out.println("Fitness tracker data: " + "\n" + "[name: " + name + "; surname: " + surname + "; birthDay: " + birthDay + "; birthMonth: " + birthMonth + "; birthYear: " + birthYear + "; age: " + age + "; email: " + email + "; phone: " + phone + "; weight: " + weight + "; pressure: " + pressure + "; steps: " + steps + "]");
     }
 }
