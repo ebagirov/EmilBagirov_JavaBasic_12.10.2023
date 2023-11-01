@@ -1,10 +1,10 @@
 package homework.hw13;
 
 public class Person {
-    private final String name;
-    private final String surname;
-    private final String city;
-    private final String phone;
+    private String name;
+    private String surname;
+    private String city;
+    private String phone;
 
     public Person(String name, String surname, String city, String phone) {
         this.name = name;
@@ -13,7 +13,7 @@ public class Person {
         this.phone = phone;
     }
 
-    public String printResult() {
+    public String personInfo() {
         return "To call citizen " + name + " " + surname + " from " + city + " dial " + phone;
     }
 }
