@@ -12,7 +12,7 @@ public class FitnessTracker {
     private String pressure;
     private int steps;
     private int age;
-    private int currentYear = 2023;
+    public int currentYear = 2023;
 
     public FitnessTracker(String name, int birthDay, int birthMonth, int birthYear, String email, String phone, String surname, double weight, String pressure, int steps) {
         this.name = name;
@@ -27,6 +27,41 @@ public class FitnessTracker {
         this.steps = steps;
         this.age = currentYear - birthYear;
     }
+
+    private String getName() {
+        return name;
+    }
+    private int  getBirthDay() {
+        return birthDay;
+    }
+    private int  getBirthMonth() {
+        return birthMonth;
+    }
+    private int  getBirthYear() {
+        return birthYear;
+    }
+    private String  getEmail() {
+        return email;
+    }
+    private String  getPhone() {
+        return phone;
+    }
+    private String  getSurname() {
+        return surname;
+    }
+    private double  getWeight() {
+        return weight;
+    }
+    private String  getPressure() {
+        return pressure;
+    }
+    private int  getSteps() {
+        return steps;
+    }
+    private int  getAge() {
+        return age;
+    }
+
 
     public void printAccountInfo() {
         System.out.println("Fitness tracker data - " + "\n" + "[name: " + name + "; surname: " + surname + "; birthDay: " + birthDay + "; birthMonth: " + birthMonth + "; birthYear: " + birthYear + "; age: " + age + "; email: " + email + "; phone: " + phone + "; weight: " + weight + "; pressure: " + pressure + "; steps: " + steps + "]");
