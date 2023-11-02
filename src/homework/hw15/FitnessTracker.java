@@ -1,6 +1,7 @@
 package homework.hw15;
 
 public class FitnessTracker {
+    private static final int CURRENT_YEAR = 2023;
     private final String name;
     private final int birthDay;
     private final int birthMonth;
@@ -12,7 +13,6 @@ public class FitnessTracker {
     private String pressure;
     private int steps;
     private int age;
-    private int CURRENT_YEAR = 2023;
 
     public FitnessTracker(String name, int birthDay, int birthMonth, int birthYear, String email, String phone, String surname, double weight, String pressure, int steps) {
         this.name = name;
