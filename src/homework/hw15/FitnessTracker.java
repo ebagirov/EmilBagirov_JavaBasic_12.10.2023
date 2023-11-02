@@ -12,7 +12,7 @@ public class FitnessTracker {
     private String pressure;
     private int steps;
     private int age;
-    public int currentYear = 2023;
+    private int CURRENT_YEAR = 2023;
 
     public FitnessTracker(String name, int birthDay, int birthMonth, int birthYear, String email, String phone, String surname, double weight, String pressure, int steps) {
         this.name = name;
@@ -25,7 +25,7 @@ public class FitnessTracker {
         this.weight = weight;
         this.pressure = pressure;
         this.steps = steps;
-        this.age = currentYear - birthYear;
+        this.age = CURRENT_YEAR - birthYear;
     }
 
     public String getName() {
