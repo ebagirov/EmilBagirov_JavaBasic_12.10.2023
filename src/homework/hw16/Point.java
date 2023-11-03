@@ -2,7 +2,7 @@ package homework.hw16;
 
 import java.util.Objects;
 
-public class Point {
+public class Point implements Cloneable {
     private int x;
     private int y;
 

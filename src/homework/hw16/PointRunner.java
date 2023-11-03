@@ -1,7 +1,7 @@
 package homework.hw16;
 
 public class PointRunner {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws CloneNotSupportedException {
         Point firstPoint = new Point(20, 120);
         Point secondPoint = new Point(0, 50);
 
@@ -20,5 +20,13 @@ public class PointRunner {
 
         System.out.println("The first: " + firstPoint);
         System.out.println("The second: " + secondPoint);
+
+        System.out.println("\n\t" + "Cloned first point" + "\t");
+        Point clonedPoint = (Point) firstPoint.clone();
+        System.out.println("Cloned point: " + clonedPoint);
+
+        System.out.println("\n\t" + "Comparison of the first point with the cloned point" + "\t");
+        System.out.println("cloned point == the first point: " + (clonedPoint == firstPoint) + " - objects are physically different in heap");
+        System.out.println("cloned point EQUALS the first point: " + clonedPoint.equals(firstPoint) + " - parameters of the objects are equal");
     }
 }
