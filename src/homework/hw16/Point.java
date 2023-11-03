@@ -1,5 +1,7 @@
 package homework.hw16;
 
+import java.util.Objects;
+
 public class Point {
     private int x;
     private int y;
@@ -33,10 +35,22 @@ public class Point {
         if (from == null || to == null) {
             return -1;
         }
-        if(from == to) {
+        if (from == to) {
             return 0;
         }
         return Math.abs(Math.min(from.x - to.x, 2) + Math.min(from.y - to.y, 2));
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Point point)) return false;
+        return x == point.x && y == point.y;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(x, y);
     }
 
     @Override
@@ -45,5 +59,10 @@ public class Point {
                 "x=" + x +
                 ", y=" + y +
                 '}';
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }
