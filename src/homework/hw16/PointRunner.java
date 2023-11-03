@@ -27,6 +27,6 @@ public class PointRunner {
 
         System.out.println("\n\t" + "Comparison of the first point with the cloned point" + "\t");
         System.out.println("cloned point == the first point: " + (clonedPoint == firstPoint) + " - objects are physically different in heap");
-        System.out.println("cloned point EQUALS the first point: " + clonedPoint.equals(firstPoint) + " - parameters of the objects are equal");
+        System.out.println("cloned point equals the first point: " + clonedPoint.equals(firstPoint) + " - parameters of the objects are equal");
     }
 }
