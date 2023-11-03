@@ -38,4 +38,12 @@ public class Point {
         }
         return Math.abs(Math.min(from.x - to.x, 2) + Math.min(from.y - to.y, 2));
     }
+
+    @Override
+    public String toString() {
+        return "Point{" +
+                "x=" + x +
+                ", y=" + y +
+                '}';
+    }
 }
