@@ -43,8 +43,12 @@ public class Point implements Cloneable {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Point point)) return false;
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof Point point)) {
+            return false;
+        }
         return x == point.x && y == point.y;
     }
 
@@ -59,7 +63,7 @@ public class Point implements Cloneable {
     }
 
     @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    public Point clone() throws CloneNotSupportedException {
+        return (Point) super.clone();
     }
 }
