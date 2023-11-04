@@ -22,11 +22,19 @@ public class PointRunner {
         System.out.println("The second: " + secondPoint);
 
         System.out.println("\n\t" + "Cloned first point" + "\t");
-        Point clonedPoint = (Point) firstPoint.clone();
+        Point clonedPoint = firstPoint.clone();
         System.out.println("Cloned point: " + clonedPoint);
 
         System.out.println("\n\t" + "Comparison of the first point with the cloned point" + "\t");
-        System.out.println("cloned point == the first point: " + (clonedPoint == firstPoint) + " - objects are physically different in heap");
-        System.out.println("cloned point equals the first point: " + clonedPoint.equals(firstPoint) + " - parameters of the objects are equal");
+        System.out.println("cloned point == the first point: " + (clonedPoint == firstPoint));
+        System.out.println("cloned point equals the first point: " + clonedPoint.equals(firstPoint));
+
+        System.out.println("\n\t" + "Copied first point" + "\t");
+        Point copiedPoint = new Point(firstPoint);
+        System.out.println("Copied point: " + copiedPoint);
+
+        System.out.println("\n\t" + "Comparison of the first point with the copied point" + "\t");
+        System.out.println("copied point == the first point: " + (copiedPoint == firstPoint));
+        System.out.println("copied point equals the first point: " + copiedPoint.equals(firstPoint));
     }
 }

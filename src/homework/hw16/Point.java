@@ -11,6 +11,14 @@ public class Point implements Cloneable {
         this.y = y;
     }
 
+    public Point(Point point) {
+        if (point == null) {
+            return;
+        }
+        this.x = point.x;
+        this.y = point.y;
+    }
+
     public int getX() {
         return x;
     }
