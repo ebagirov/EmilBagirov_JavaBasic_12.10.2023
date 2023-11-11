@@ -8,7 +8,7 @@ public class IPhones implements Smartphones, IOS {
     }
 
     @Override
-    public void call(long phoneNumber) {
+    public void call(long phoneNumber, String message) {
         System.out.println("Send SMS to: " + phoneNumber + "\n Message: " + message);
     }
 
