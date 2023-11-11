@@ -8,13 +8,13 @@ public class IPhones implements Smartphones, IOS {
     }
 
     @Override
-    public void call(long phoneNumber, String message) {
-        System.out.println("Send SMS to: " + phoneNumber + "\n Message: " + message);
+    public void call(long phoneNumber) {
+        System.out.println("Dial: " + phoneNumber);
     }
 
     @Override
     public void sms(long phoneNumber, String message) {
-        System.out.println("Run Safari app.");
+        System.out.println("Send SMS to: " + phoneNumber + "\n Message: " + message);
     }
 
     @Override
