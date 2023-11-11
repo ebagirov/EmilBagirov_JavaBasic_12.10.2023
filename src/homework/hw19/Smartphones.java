@@ -5,5 +5,5 @@ public interface Smartphones {
 
     void sms(long phoneNumber, String message);
 
-    void internet(String mobileNetwork);
+    void internet(String networkType);
 }
