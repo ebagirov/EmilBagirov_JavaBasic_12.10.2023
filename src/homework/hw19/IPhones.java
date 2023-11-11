@@ -19,7 +19,6 @@ public class IPhones implements Smartphones, IOS {
 
     @Override
     public void airplaneMode() {
-        System.out.println("[IPHONE] Airplane mode disabled. Connection restored." );
+        System.out.println("[IPHONE] Airplane mode disabled. Connection restored.");
     }
-
 }
