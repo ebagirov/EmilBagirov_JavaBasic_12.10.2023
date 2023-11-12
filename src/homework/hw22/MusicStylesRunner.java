@@ -2,8 +2,13 @@ package homework.hw22;
 
 public class MusicStylesRunner {
     public static void main(String[] args) {
-        MusicStyles petShopBoys = new MusicStyles();
-        MusicStyles ledZeppelin = new MusicStyles();
-        MusicStyles sarahBrightman = new MusicStyles();
+        MusicStyles petShopBoys = new PopMusic();
+        MusicStyles ledZeppelin = new RockMusic();
+        MusicStyles sarahBrightman = new ClassicMusic();
+
+        System.out.println();
+        petShopBoys.playMusic();
+        ledZeppelin.playMusic();
+        sarahBrightman.playMusic();
     }
 }

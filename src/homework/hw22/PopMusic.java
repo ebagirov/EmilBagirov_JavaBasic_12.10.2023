@@ -2,7 +2,8 @@ package homework.hw22;
 
 public class PopMusic extends MusicStyles {
     @Override
-    void playMusic(String musicType) {
-        super.playMusic(musicType);
+    public void playMusic() {
+        super.playMusic();
+        System.out.println("\t 'Pet Shop Boys' sings pop music");
     }
 }
