@@ -2,7 +2,8 @@ package homework.hw22;
 
 public class ClassicMusic extends MusicStyles {
     @Override
-    public void playMusic() {
+    public void playClassicMusic(MusicStyles classicMusic) {
+        super.playClassicMusic(classicMusic);
         System.out.println("\t Sarah Brightman sings classic music");
     }
 }

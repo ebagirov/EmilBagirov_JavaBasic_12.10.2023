@@ -6,9 +6,11 @@ public class MusicStylesRunner {
         MusicStyles ledZeppelin = new RockMusic();
         MusicStyles sarahBrightman = new ClassicMusic();
 
-        System.out.println();
-        petShopBoys.playMusic();
-        ledZeppelin.playMusic();
-        sarahBrightman.playMusic();
+        System.out.println("""
+                \nLooking for something to listen to?
+                Choose the artist and listen to your favourite music!""");
+        petShopBoys.playPopMusic(petShopBoys.toString());
+        ledZeppelin.playRockMusic(String.valueOf(ledZeppelin));
+        sarahBrightman.playClassicMusic(sarahBrightman);
     }
 }
