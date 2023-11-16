@@ -4,6 +4,6 @@ public class ClassicMusic extends MusicStyles {
     @Override
     public void playClassicMusic(MusicStyles classicMusic) {
         super.playClassicMusic(classicMusic);
-        System.out.println("\t Sarah Brightman sings classic music");
+        System.out.println("\t Sarah Brightman - [classic music]");
     }
 }
