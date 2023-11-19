@@ -6,7 +6,9 @@ public class TemperatureConverterRunner {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.print("\nEnter temperature in °C: ");
+        System.out.print("\n\t 'TEMPERATURE CONVERTER' \t");
+        System.out.println("\n Hello! Need to convert temperature to another unit? Try this programme :)");
+        System.out.print("\nEnter temperature unit in °C: ");
         double temperatureCelsius = scanner.nextDouble();
 
         KelvinConverter celsiusToKelvinConverter = new KelvinConverter();

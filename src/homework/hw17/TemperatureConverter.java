@@ -4,5 +4,5 @@ public abstract class TemperatureConverter {
 
     public abstract double toCelsius(double celsius);
 
-    public abstract double fromCelsius(double convertedCelsius);
+    public abstract double fromCelsius(double celsius);
 }
