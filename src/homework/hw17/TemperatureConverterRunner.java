@@ -6,11 +6,11 @@ public class TemperatureConverterRunner {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+        System.out.print("\nEnter temperature in °C: ");
+        double temperatureCelsius = scanner.nextDouble();
+
         KelvinConverter celsiusToKelvinConverter = new KelvinConverter();
         FahrenheitConverter celsiusToFahrenheitConverter = new FahrenheitConverter();
-
-        double temperatureCelsius = scanner.nextDouble();
-        System.out.print("Enter temperature in °C: ");
 
         double kelvinTemperature = celsiusToKelvinConverter.fromCelsius(temperatureCelsius);
         System.out.println(temperatureCelsius + "°C degrees converted to " + kelvinTemperature + "K");
