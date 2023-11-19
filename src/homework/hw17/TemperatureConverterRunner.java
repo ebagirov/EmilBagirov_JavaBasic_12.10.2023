@@ -6,6 +6,10 @@ public class TemperatureConverterRunner {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println();
+        KelvinConverter celsiusToKelvinConverter = new KelvinConverter();
+        FahrenheitConverter celsiusToFahrenheitConverter = new FahrenheitConverter();
+
+        System.out.print("Enter temperature in °C: ");
+        double temperatureCelsius = scanner.nextDouble();
     }
 }
