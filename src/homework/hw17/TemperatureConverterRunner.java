@@ -14,16 +14,18 @@ public class TemperatureConverterRunner {
         KelvinConverter celsiusToKelvinConverter = new KelvinConverter();
         FahrenheitConverter celsiusToFahrenheitConverter = new FahrenheitConverter();
 
-        double kelvinTemperature = celsiusToKelvinConverter.fromCelsius(temperatureCelsius);
-        System.out.println(temperatureCelsius + "°C degrees converted to " + kelvinTemperature + "K");
+        System.out.println("\tTemperature conversions: ");
 
-        double celsiusFromKelvin = celsiusToKelvinConverter.toCelsius(kelvinTemperature);
-        System.out.println(kelvinTemperature + "K degrees converted to " + celsiusFromKelvin + "°C");
+        double kelvinTemperature = celsiusToKelvinConverter.fromCelsius(temperatureCelsius);
+        System.out.println(temperatureCelsius + "°C converted to " + kelvinTemperature + "K");
 
         double fahrenheitTemperature = celsiusToFahrenheitConverter.fromCelsius(temperatureCelsius);
-        System.out.println(temperatureCelsius + "°C degrees converted to " + fahrenheitTemperature + "°F");
+        System.out.println(temperatureCelsius + "°C converted to " + fahrenheitTemperature + "°F");
+
+        double celsiusFromKelvin = celsiusToKelvinConverter.toCelsius(kelvinTemperature);
+        System.out.println(kelvinTemperature + "°K converted to " + celsiusFromKelvin + "°C");
 
         double celsiusFromFahrenheit = celsiusToFahrenheitConverter.toCelsius(fahrenheitTemperature);
-        System.out.println(fahrenheitTemperature + "°F degrees converted to " + celsiusFromFahrenheit + "°C");
+        System.out.println(fahrenheitTemperature + "°F converted to " + celsiusFromFahrenheit + "°C");
     }
 }
